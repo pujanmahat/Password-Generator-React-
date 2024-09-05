@@ -9,11 +9,10 @@ function App() {
 
   // useRef hook
   const passwordRef = useRef(null)
-
   const passwordGenerator = useCallback(()=>{
     let pass=""
     let str="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
-    if(numberAllowed) str+="o12345678"
+    if(numberAllowed) str+="012345678"
     if(charAllowed) str+="!@#$%^&*"
     for(let i=1;i<=length;i++)
     {
